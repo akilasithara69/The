@@ -1,5 +1,8 @@
 import React from 'react'
 import {StyleSheet,Text,View} from 'react-native'
+import Button from '../components/Button'
+import Strings from '../const/String'
+import EmailTextField from '../components/EmailTextField'
 
 function SignInScreen(){
     return(
@@ -7,6 +10,9 @@ function SignInScreen(){
             <Text style={styles.text}>
                 SignIn Screen
             </Text>
+
+            <Button title={Strings.Join}></Button>
+            <EmailTextField></EmailTextField>
 
         </View>
     )
